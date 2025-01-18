@@ -1,0 +1,124 @@
+.scrollbar{
+    overflow-y : auto;
+    max-height: calc(100vh - 200px);
+    margin-top: 5px;
+}
+pre::-webkit-scrollbar {
+    height: 7px;
+}
+.scrollbar::-webkit-scrollbar, .note-area::-webkit-scrollbar, pre::-webkit-scrollbar, .homeNoteArea::-webkit-scrollbar {
+    width: 10px;
+}
+.scrollbar::-webkit-scrollbar-track, .note-area::-webkit-scrollbar-track, pre::-webkit-scrollbar-track, .homeNoteArea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.scrollbar::-webkit-scrollbar-thumb, .note-area::-webkit-scrollbar-thumb, pre::-webkit-scrollbar-thumb, .homeNoteArea::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.84);
+    border-radius: 10px;
+}
+.scrollbar::-webkit-scrollbar-thumb:hover, .note-area::-webkit-scrollbar-thumb:hover, pre::-webkit-scrollbar-thumb:hover, .homeNoteArea::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.712);
+    cursor: pointer;
+}
+.note-area{
+    overflow-y: auto;
+    min-height: 80vh;
+    max-height: 80vh;
+    height: 'auto';
+}
+code {
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+pre {
+    background-color: #f4f4f4;
+    padding: 1px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+#insertedImg{
+    width: 70%;
+    height: 60%;
+    padding: 1px;
+}
+#documentation {
+    overflow-y: auto;
+    height: 80%;
+    width: 100%;
+    background-color: #eb9b34;
+    color: white;
+    border: 0;
+    margin-left: 0px;
+    resize: none;
+}
+@media (max-width: 768px) {
+    #boxCreateNote {
+        height: 17% !important;
+        width: 50% !important;
+        top: 60% !important;
+    }
+}
+@media (max-width: 768px) {
+    #loginCard {
+        width: 70% !important;
+    }
+}
+#homeNotes{
+    overflow-x: auto;
+    max-width: 100%;
+    min-width: 100%;
+}
+.homeNoteArea{
+    background-color: #f4f4f4;
+    padding: 1px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+.youtube-embed {
+    width: 50%;
+    aspect-ratio: 16/9;
+  }
+  
+iframe {
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 768px) {
+    .youtube-embed {
+        width: 100% !important;
+    }
+}
+@media (max-width: 768px) {
+    #cardProfileDelete {
+        width: 70% !important;
+        height: 30% !important;
+    }
+}
+@media (max-width: 768px) {
+    #btnHome {
+        min-width: fit-content !important;
+        max-width: 100% !important;
+        white-space: nowrap !important; 
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        text-align: center !important;
+    }
+}
+@media (max-width: 768px) {
+    #timeSetter{
+        width: 80% !important;
+        height: 40% !important;
+        z-index: 1200 !important;
+    }
+}
+@media (max-width: 768px) {
+    #documentationCard{
+        width: 70% !important;
+        top: 80% !important;
+        height: 40% !important;
+        z-index: 1200 !important;
+    }
+}
+

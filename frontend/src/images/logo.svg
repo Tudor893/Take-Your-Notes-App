@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100" width="500" height="100">
+  <style>
+    .text {
+      font-family: 'Arial', sans-serif;
+      font-size: 40px;
+      font-weight: bold;
+      fill:rgb(15, 103, 134);
+      stroke: black;
+      stroke-width: 1px;
+      opacity: 0;
+      animation: fadeIn 2s forwards, move 3s ease-in-out infinite alternate;
+      letter-spacing: -3px; /* Aproape literelor */
+    }
+
+    .letter {
+      display: inline-block;
+      animation: bounce 0.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes move {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+
+  <text x="20" y="60" class="text">
+    <tspan class="letter">T</tspan>
+    <tspan class="letter">a</tspan>
+    <tspan class="letter">k</tspan>
+    <tspan class="letter">e</tspan>
+    <tspan> </tspan>
+    <tspan class="letter">Y</tspan>
+    <tspan class="letter">o</tspan>
+    <tspan class="letter">u</tspan>
+    <tspan class="letter">r</tspan>
+    <tspan> </tspan>
+    <tspan class="letter">N</tspan>
+    <tspan class="letter">o</tspan>
+    <tspan class="letter">t</tspan>
+    <tspan class="letter">e</tspan>
+    <tspan class="letter">s</tspan>
+  </text>
+</svg>
